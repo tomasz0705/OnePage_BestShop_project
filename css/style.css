@@ -350,3 +350,144 @@ header {
     margin-top: 98px;
     margin-bottom: 64px;
 }
+
+/* PRICING SECTION */
+.pricing {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-title {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+}
+
+.pricing-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pricing-box {
+    width: 372px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.pricing-type {
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing-price {
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.pricing-limited {
+    margin-top: 15px;
+    font-family: var(--font-raleway);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing-items {
+    text-align: center;
+}
+
+.pricing-item {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    display: inline-block;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing-item-not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing-box .btn {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 64px;
+    border-radius: 23px;
+    border: none;
+    position: relative;
+    bottom: -25px;
+    font-size: 13px;
+}
+
+.pricing-box .btn-redish {
+    background-color: var(--color-redish);
+}
+
+.pricing-box .btn-primary {
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+.pricing-box .btn-green {
+    background-color: var(--color-green);
+}
+
+/* BASIC BOX */
+.pricing-box-basic {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing-box-basic .pricing-price {
+    color: var(--color-redish);
+    margin-bottom: 30px;
+}
+
+/* PROFESSIONAL BOX */
+.pricing-box-professional {
+    width: 405px;
+    margin: 0 58px;
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    border: 1px solid var(--color-primary);
+}
+
+.pricing-box-professional .pricing-type {
+    font-size: 21px;
+}
+
+.pricing-box-professional .pricing-price {
+    color: var(--color-primary);
+}
+
+.pricing-box-professional .pricing-item {
+    margin-bottom: 28px;
+}
+
+/* PREMIUM BOX */
+.pricing-box-premium {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-box-premium .pricing-price {
+    color: var(--color-green);
+}
