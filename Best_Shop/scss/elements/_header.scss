@@ -1,0 +1,122 @@
+.header {
+    height: 70px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+    &__container {
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: $font-raleway;
+        color: $color-primary;
+    }
+
+    .nav {
+        &__element {
+            padding: 0px 25px;
+
+            &:last-child {
+            padding-right: 0;
+            }
+        }
+
+        &__link {
+            font-size: 0.6875rem;
+            font-weight: 700;
+            color: $color-grey;
+            letter-spacing: 0.1875rem;
+            text-transform: uppercase;
+            padding: 23px 15px;
+            border-bottom: 4px solid transparent;
+
+            &:hover {
+            color: $color-black;
+            border-color: $color-primary;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        @include mobile {
+            position: absolute;
+            left: 0;
+            top: 95px;
+            flex-direction: column;
+            background-color: white;
+            width: 100%;
+            padding-bottom: 20px;
+            display: none;
+
+            .nav__element {
+                padding: 0;
+            }
+
+            .nav__link {
+                display: block;
+                padding: 14px 20px;
+            }
+        }
+    }
+
+    .menu {
+        &__btn {
+            display: none;
+
+            @include mobile {
+                &:checked {
+                    ~ .header__nav {
+                        display: flex;
+                    }
+
+                    ~ .menu__toggle {
+                        span {
+                            &:nth-child(1) {
+                                transform: translate(2px, 5px) rotate(45deg);
+                            }
+                            &:nth-child(2) {
+                                opacity: 0;
+                            }
+                            &:nth-child(3) {
+                                transform: translate(2px, -5px) rotate(-45deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__toggle {
+            display: none;
+
+            span {
+                width: 20px;
+                height: 2px;
+                display: block;
+                margin-bottom: 3px;
+                background-color: $color-primary;
+                transition: 0.3s all ease-in-out;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            @include mobile {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+

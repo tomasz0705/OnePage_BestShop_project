@@ -1,0 +1,36 @@
+.section-opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening-content {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.opening-header {
+    font-size: 49px;
+    font-family: $font-raleway;
+}
+
+.opening-text {
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.btn-opening {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+    padding: 23px 157px;
+    background: $color-primary;
+    display: inline-block;
+}
+
+.opening-img {
+    width: 100%;
+    height: auto;
+}

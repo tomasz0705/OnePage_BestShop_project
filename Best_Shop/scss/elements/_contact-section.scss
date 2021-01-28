@@ -1,0 +1,41 @@
+.contact {
+    padding: 80px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-column {
+    width: 50%;
+}
+
+.contact-column2 {
+    width: 440px;
+}
+
+.contact-title {
+    font-size: 3.0625rem;
+    line-height: 3.6875rem;
+}
+
+.contact-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 22px 0 42px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.details-item {
+    color: $color-grey;
+}
+
+.details-item:first-of-type {
+    margin-right: 20px;
+}
+
+.details-item img {
+    margin-right: 10px;
+}

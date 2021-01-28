@@ -1,0 +1,32 @@
+.footer {
+    box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.16);
+    background: $color-light-grey;
+    padding: 20px 0;
+}
+
+.footer-cotainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-logo .logo {
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+.footer-copy {
+    font-size: 11px;
+    color: $color-grey;
+    line-height: 15px;
+}
+
+.footer-icons a:first-child {
+    margin-right: 20px;
+}

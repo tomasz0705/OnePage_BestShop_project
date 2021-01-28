@@ -1,0 +1,20 @@
+// Generic
+@import "generic/reset";
+
+// Settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/index";
+@import "settings/mixins";
+
+
+// Elements
+@import "elements/base";
+@import "elements/benefits-section";
+@import "elements/contact-section";
+@import "elements/footer";
+@import "elements/form";
+@import "elements/header";
+@import "elements/opening-section";
+@import "elements/pricing-section";
+@import "elements/statistic-section";
