@@ -1,0 +1,27 @@
+.btn {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 23px 65px;
+    border-radius: $button-radius;
+    border: none;
+
+
+    &--primary {
+      background-color: $color-primary;
+      box-shadow: 5px 10px 14px $color-primary-shadow;
+    }
+
+    &--redish {
+      background-color: $color-redish;
+    }
+
+    &--green {
+      background-color: $color-green;
+    }
+
+    &--large {
+      padding: 22px 155px;
+    }
+}
