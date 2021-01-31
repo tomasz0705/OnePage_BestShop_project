@@ -124,7 +124,7 @@
 
     &__price {
         font-family: $font-open-sans;
-        font-size: 46px;
+        font-size: 2.875rem;
         font-weight: 300;
         margin-top: 20px;
     }
@@ -132,7 +132,7 @@
     &__limited {
         margin-top: 15px;
         font-family: $font-raleway;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: bold;
     }
 
@@ -146,7 +146,7 @@
     }
 
     &__item {
-        font-size: 14px;
+        font-size: 0.875rem;
         margin-bottom: 20px;
 
         @include notebook {
