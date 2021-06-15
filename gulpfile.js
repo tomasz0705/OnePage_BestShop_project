@@ -1,5 +1,4 @@
-// Ścieżka do aktualnie wykonywanego zadania
-const entryPath = "Best_Shop";
+const entryPath = ".";
 
 const gulp = require("gulp");
 const sass = require("gulp-sass");
